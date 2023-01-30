@@ -1,0 +1,168 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+body{
+    min-width: 375px;
+    background-color: hsl(225, 100%, 94%);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    width: 68%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid hsl(225, 100%, 94%);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.illustration-hero{
+    width: 100%;
+    height: 10em;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+h2{
+    margin: 1.25em auto .7em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-shadow: 0 0 1px hsl(223, 47%, 23%);
+}
+
+p{
+    width: 75%;
+    margin: 0 auto;
+    line-height: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    text-shadow: 0 0 0.5px hsl(224, 23%, 55%);
+}
+
+.items{
+    background-color: hsl(224, 100%, 98%);
+    width: 90%;
+    margin: 1.5em auto .75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.detail-items{
+    margin: auto 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discribe-item{
+    margin: -.5em 1em;
+}
+
+.name-item{
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    text-shadow: 0 0 1px hsl(223, 47%, 23%);
+}
+
+.price-item{
+    line-height: unset;
+    margin: -1em 0 1.5em;
+}
+
+.change-item a{
+    cursor: pointer;
+    margin: auto 1em;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+}
+
+.change-item a:hover{
+    text-decoration: none;
+    /* color: hsl(245, 100%, 71%); */
+    opacity: 0.6;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.procced-btn{
+    cursor: pointer;
+    width: 90%;
+    padding: 1.25em;
+    margin: .75em auto 1.5em;
+    font-weight: 700;
+    text-shadow: 0 0 1px hsl(225, 100%, 94%);
+    background-color: hsl(245, 75%, 52%);
+    border: unset;
+    border-radius: 12px;
+    color: hsl(225, 100%, 94%);
+    box-shadow: 1px 20px 5px hsl(225, 100%, 94%);
+}
+
+.cancel-btn{
+    cursor: pointer;
+    width: 90%;
+    padding: 1.25em;
+    margin: .25em auto 1em;
+    font-weight: 900;
+    border: unset;
+    background-color: #fff;
+    color: hsl(224, 23%, 55%);
+}
+
+.procced-btn:hover{
+    opacity: 0.6;
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media (min-width: 1440px){
+    .container{
+        width: 375px;
+    }
+}
